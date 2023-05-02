@@ -10,6 +10,9 @@ const Cart = (props) => {
 
   const [showOrder, setShowOrder] = useState(false);
 
+  const productAmount = `$${cartCtx.productAmount.toFixed(2)}`;
+  const gstAmount = `$${cartCtx.gstAmount.toFixed(2)}`;
+  const vatAmount = `$${cartCtx.vatAmount.toFixed(2)}`;
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
@@ -18,7 +21,7 @@ const Cart = (props) => {
   };
 
   const cartItemAddHandler = (item) => {
-    cartCtx.addItem({ ...item, amount: 1 });
+    cartCtx.addItem({ ...item, quantity: 1 });
   };
 
   
@@ -33,7 +36,7 @@ const Cart = (props) => {
         <CartItem
           key={item.id}
           name={item.name}
-          amount={item.amount}
+          quantity={item.quantity}
           price={item.price}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
@@ -48,8 +51,16 @@ const Cart = (props) => {
         <>
           {cartItems}
           <div className={classes.total}>
-            <span>Total Amount</span>
-            <span>{totalAmount}</span>
+            <span>Total Amount</span><span>{productAmount}</span>
+          </div>
+          <div className={classes.total}>
+            <span>Total GST</span><span>{gstAmount}</span>
+          </div>
+          <div className={classes.total}>
+            <span>Total VAT</span><span>{vatAmount}</span>
+          </div>
+          <div className={`${classes.total} ${classes.totalFontSize}`}>
+            <span>Total</span><span>{totalAmount}</span>
           </div>
           <div className={classes.actions}>
             <button className={classes["button--alt"]} onClick={props.onClose}>

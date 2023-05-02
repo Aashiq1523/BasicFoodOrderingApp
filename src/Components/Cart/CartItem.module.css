@@ -13,7 +13,7 @@
   }
   
   .summary {
-    width: 10rem;
+    width: 15rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
     color: #40bd1a;
   }
   
-  .amount {
+  .quantity {
     font-weight: bold;
     border: 1px solid #ccc;
     padding: 0.25rem 0.75rem;
