@@ -14,10 +14,10 @@ const CartItem = (props) => {
           <span className={classes.quantity}>x {props.quantity}</span>
         </div>
         <div className={classes.summary}> 
-          <span className={classes.price}>GST: {gstPrice}</span>
+          <span className={classes.price}>GST(18%): {gstPrice}</span>
         </div>
         <div className={classes.summary}> 
-          <span className={classes.price}>VAT: {vatPrice}</span>
+          <span className={classes.price}>VAT(12%): {vatPrice}</span>
         </div>
       </div>
       <div className={classes.actions}>
