@@ -54,10 +54,10 @@ const Cart = (props) => {
             <span>Total Amount</span><span>{productAmount}</span>
           </div>
           <div className={classes.total}>
-            <span>Total GST</span><span>{gstAmount}</span>
+            <span className={classes.display}>Total GST <p className={classes.para}> (18 %)</p></span><span>{gstAmount}</span>
           </div>
           <div className={classes.total}>
-            <span>Total VAT</span><span>{vatAmount}</span>
+          <span className={classes.display}>Total VAT <p className={classes.para}> (12 %)</p></span><span>{vatAmount}</span>
           </div>
           <div className={`${classes.total} ${classes.totalFontSize}`}>
             <span>Total</span><span>{totalAmount}</span>

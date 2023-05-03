@@ -5,7 +5,16 @@
     max-height: 20rem;
     overflow: auto;
   }
-  
+
+.display {
+  display:inline-flex;
+}
+
+.para {
+  margin:0;
+  color: #40bd1a;
+}
+
   .total {
     display: flex;
     justify-content: space-between;
