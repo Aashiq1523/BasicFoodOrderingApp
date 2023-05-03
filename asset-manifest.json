@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/BasicFoodOrderingApp/static/css/main.0ddfbac0.css",
-    "main.js": "/BasicFoodOrderingApp/static/js/main.22cff485.js",
+    "main.css": "/BasicFoodOrderingApp/static/css/main.9e864b98.css",
+    "main.js": "/BasicFoodOrderingApp/static/js/main.d7292001.js",
     "static/js/787.9edab3cf.chunk.js": "/BasicFoodOrderingApp/static/js/787.9edab3cf.chunk.js",
     "static/media/headerBanner.jpg": "/BasicFoodOrderingApp/static/media/headerBanner.28595fd008a7fbee0c4e.jpg",
     "index.html": "/BasicFoodOrderingApp/index.html",
-    "main.0ddfbac0.css.map": "/BasicFoodOrderingApp/static/css/main.0ddfbac0.css.map",
-    "main.22cff485.js.map": "/BasicFoodOrderingApp/static/js/main.22cff485.js.map",
+    "main.9e864b98.css.map": "/BasicFoodOrderingApp/static/css/main.9e864b98.css.map",
+    "main.d7292001.js.map": "/BasicFoodOrderingApp/static/js/main.d7292001.js.map",
     "787.9edab3cf.chunk.js.map": "/BasicFoodOrderingApp/static/js/787.9edab3cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ddfbac0.css",
-    "static/js/main.22cff485.js"
+    "static/css/main.9e864b98.css",
+    "static/js/main.d7292001.js"
   ]
 }
